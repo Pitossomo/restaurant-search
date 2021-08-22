@@ -4,13 +4,15 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ## Dev Steps ##
 
-1. Lesson 1 
+1. Sidebar Part 1 
   - Project cloned from [Patrick Narciso](https://github.com/patrick-narciso/restaurants-search.git), branch boilerplate (git checkout boilerplate)
   - Styled Components installed
   - Theme.js created with global style variables
-  - Created ./pages/index.jsx and changed App.js for it to be the homepage
+  - Created ./pages/Home/index.jsx and changed App.js to reference the new Home page
 
-2. 
+2. Sidebar Part 2
+  - Theme variables applied to Home page
+  - Styled-reset installed
 
 
 
