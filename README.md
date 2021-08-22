@@ -1,5 +1,19 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+# restaurante-seach #
+
+## Dev Steps ##
+
+1. Lesson 1 
+  - Project cloned from [Patrick Narciso](https://github.com/patrick-narciso/restaurants-search.git), branch boilerplate (git checkout boilerplate)
+  - Styled Components installed
+  - Theme.js created with global style variables
+  - Created ./pages/index.jsx and changed App.js for it to be the homepage
+
+2. 
+
+
+
 ## Available Scripts
 
 In the project directory, you can run:
