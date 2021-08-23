@@ -18,6 +18,11 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 3. Sidebar Part 3
   - Search component created and added to sidebar in home page, using React-Text-Field
 
+4. Carousel Part 1
+  - Changed logo size
+  - Added search icon with Material-React-Icon
+  - Added Wrapper and Map placeholder
+
 
 ## Available Scripts
 

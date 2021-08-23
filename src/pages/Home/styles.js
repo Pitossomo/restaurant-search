@@ -1,5 +1,10 @@
 import styled from 'styled-components';
 
+export const Wrapper =  styled.div`
+  display: flex;
+  flex-direction: row;
+`
+
 export const Container = styled.aside`
   background-color: ${(props) => props.theme.colors.background};
   width: 360px;
@@ -20,3 +25,7 @@ export const SearchLogo = styled.img`
   margin: 16px;
 `;
 
+export const Map = styled.div`
+  background-color: red;
+  width: 500px;
+`
