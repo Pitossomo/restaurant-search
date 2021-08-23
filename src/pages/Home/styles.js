@@ -11,7 +11,12 @@ export const Search = styled.section`
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 16px;
   background-color: #ffffff;
+  padding: 16px;
+  align-items: center;
+`;
+
+export const SearchLogo = styled.img`
+  margin: 16px;
 `;
 

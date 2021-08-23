@@ -15,6 +15,8 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
   - Styled-reset installed
   - Sidebar divided from the page inside Home/index.jsx
 
+3. Sidebar Part 3
+  - Search component created and added to sidebar in home page, using React-Text-Field
 
 
 ## Available Scripts

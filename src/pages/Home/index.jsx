@@ -3,15 +3,15 @@ import TextField, { Input } from '@material/react-text-field';
 
 import logo from '../../assets/logo.svg'
 
-import { Container, Search } from './styles'
+import { Container, Search, SearchLogo } from './styles'
 
 const Home = () => {
-  const [inputValue, setInputValue] = useState('sem glúten');
+  const [inputValue, setInputValue] = useState('pizza');
 
   return (
     <Container>
       <Search>
-        <img src={logo} alt="Logo do site" />
+        <SearchLogo src={logo} alt="Logo do site" />
         <TextField
           label='Pesquisar'
           outlined
@@ -19,8 +19,9 @@ const Home = () => {
           // trailingIcon={<MaterialIcon role="button" icon="delete"/>}
         >
           <Input
-          value={inputValue}
-          onChange={(e) => setInputValue(e.target.value)} />
+            value={inputValue}
+            onChange={(e) => setInputValue(e.target.value)}
+          />
         </TextField>
       </Search>
     </Container>
