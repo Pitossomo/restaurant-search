@@ -13,6 +13,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 2. Sidebar Part 2
   - Theme variables applied to Home page
   - Styled-reset installed
+  - Sidebar divided from the page inside Home/index.jsx
 
 
 
