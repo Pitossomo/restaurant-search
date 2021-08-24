@@ -25,10 +25,10 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 5. Carousel Part 2
   - Roboto font installed
-  - Criação do carrosel com uso do React-Slicker e placeholders
+  - Carousel created with React-Slicker and placeholder slides
 
-6. 
-
+6. Carousel Part 3
+  - Slide component created with styled div and background-image
 
 ## Available Scripts
 

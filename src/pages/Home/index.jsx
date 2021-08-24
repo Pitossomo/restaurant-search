@@ -7,6 +7,7 @@ import logo from '../../assets/logo.svg'
 import fakeImg from '../../assets/restaurante-fake.png'
 
 import { Wrapper, Container, Search, SearchLogo, Map, CarouselTitle } from './styles'
+import { Slide } from '../../components';
 
 const Home = () => {
   const [inputValue, setInputValue] = useState('');
@@ -16,7 +17,7 @@ const Home = () => {
     infinite: true,
     speed: 500,
     slidesToShow: 4,
-    slidesToScroll: 6,
+    slidesToScroll: 9,
     adaptiveHeight: true
   };
 
@@ -39,24 +40,15 @@ const Home = () => {
         </Search>
         <CarouselTitle>Na sua Área </CarouselTitle>
         <Slider {...sliderSettings} >
-          <div>
-            <img src={fakeImg} alt="fakeImg" />
-          </div>
-          <div>
-            <img src={fakeImg} alt="fakeImg" />
-          </div>
-          <div>
-            <img src={fakeImg} alt="fakeImg" />
-          </div>
-          <div>
-            <img src={fakeImg} alt="fakeImg" />
-          </div>
-          <div>
-            <img src={fakeImg} alt="fakeImg" />
-          </div>
-          <div>
-            <img src={fakeImg} alt="fakeImg" />
-          </div>
+          <Slide photo={fakeImg} />
+          <Slide photo={fakeImg} />
+          <Slide photo={fakeImg} />
+          <Slide photo={fakeImg} />
+          <Slide photo={fakeImg} />
+          <Slide photo={fakeImg} />
+          <Slide photo={fakeImg} />
+          <Slide photo={fakeImg} />
+          <Slide photo={fakeImg} />
         </Slider>
       </Container>
       <Map>
