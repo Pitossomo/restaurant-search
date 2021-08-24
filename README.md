@@ -25,7 +25,9 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 5. Carousel Part 2
   - Roboto font installed
-  - Criação dos Slides dos restaurantes
+  - Criação do carrosel com uso do React-Slicker e placeholders
+
+6. 
 
 
 ## Available Scripts
