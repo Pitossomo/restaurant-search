@@ -18,11 +18,21 @@ export const Search = styled.section`
   justify-content: center;
   background-color: #ffffff;
   padding: 16px;
-  align-items: center;
+  align-items: stretch;
 `;
 
 export const SearchLogo = styled.img`
-  margin: 16px;
+  margin: auto auto 20px auto;
+  width: 50%;
+`;
+
+export const CarouselTitle = styled.h1`
+  font-family: ${(props) => props.theme.fonts.regular };
+  color: ${(props) => props.theme.colors.text};
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 29px;
+  margin: 16px 8px;
 `;
 
 export const Map = styled.div`

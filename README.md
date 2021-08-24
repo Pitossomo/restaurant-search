@@ -23,6 +23,10 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
   - Added search icon with Material-React-Icon
   - Added Wrapper and Map placeholder
 
+5. Carousel Part 2
+  - Roboto font installed
+  - Criação dos Slides dos restaurantes
+
 
 ## Available Scripts
 
