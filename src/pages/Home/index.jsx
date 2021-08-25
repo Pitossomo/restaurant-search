@@ -3,24 +3,12 @@ import TextField, { Input } from '@material/react-text-field';
 import MaterialIcon from '@material/react-material-icon';
 
 import logo from '../../assets/logo.svg'
-import fakeImg from '../../assets/restaurante-fake.png'
 
-import { Wrapper, Container, Search, SearchLogo, Map, CarouselTitle, Slide, Carousel } from './styles'
-//import { Slide } from '../../components';
+import { Wrapper, Container, Search, SearchLogo, Map, CarouselTitle } from './styles'
+import { RestaurantCard, Carousel } from '../../components';
 
 const Home = () => {
   const [inputValue, setInputValue] = useState('');
-
-  const sliderSettings = {
-    dots: true,
-    infinite: true,
-    speed: 500,
-    slidesToShow: 4,
-    slidesToScroll: 9,
-    adaptiveHeight: true
-  };
-
-  const slides = Array(9).fill({name: "Nome do Restaurante", imgUrl: fakeImg})
 
   return (
     <Wrapper>
@@ -38,15 +26,10 @@ const Home = () => {
               onChange={(e) => setInputValue(e.target.value)}
             />
           </TextField>
+          <CarouselTitle>Na sua Área </CarouselTitle>
+          <Carousel />
         </Search>
-        <CarouselTitle>Na sua Área </CarouselTitle>
-        <Carousel {...sliderSettings} >
-          { slides.map((restaurant, i) => (
-            <Slide key={`slide${i}`} photo={restaurant.imgUrl}>
-              <span>{restaurant.name}</span>
-            </Slide>
-          ))}
-        </Carousel>
+        <RestaurantCard />
       </Container>
       <Map>
       </Map>

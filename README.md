@@ -33,6 +33,9 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 7. Carousel Finishing
   - Slide customizing
 
+8. Developing Components Part 1
+  - Developing restaurant cards
+
 ## Available Scripts
 
 In the project directory, you can run:
