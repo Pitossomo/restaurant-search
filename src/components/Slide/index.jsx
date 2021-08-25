@@ -1,11 +1,11 @@
 import React from "react"
 import styled from "styled-components"
 
-const Card = styled.div`
+const Style = styled.div`
   width: 90px;
   height: 90px;
   border-radius: 6px;
-  background-image: ${(props) => props.photo};
+  background-image: url(${(props) => props.photo});
   background-size: cover;
 `
 

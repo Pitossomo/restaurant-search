@@ -1,13 +1,12 @@
 import React, { useState } from 'react';
 import TextField, { Input } from '@material/react-text-field';
 import MaterialIcon from '@material/react-material-icon';
-import Slider from "react-slick";
 
 import logo from '../../assets/logo.svg'
 import fakeImg from '../../assets/restaurante-fake.png'
 
-import { Wrapper, Container, Search, SearchLogo, Map, CarouselTitle } from './styles'
-import { Slide } from '../../components';
+import { Wrapper, Container, Search, SearchLogo, Map, CarouselTitle, Slide, Carousel } from './styles'
+//import { Slide } from '../../components';
 
 const Home = () => {
   const [inputValue, setInputValue] = useState('');
@@ -20,6 +19,8 @@ const Home = () => {
     slidesToScroll: 9,
     adaptiveHeight: true
   };
+
+  const slides = Array(9).fill({name: "Nome do Restaurante", imgUrl: fakeImg})
 
   return (
     <Wrapper>
@@ -39,17 +40,13 @@ const Home = () => {
           </TextField>
         </Search>
         <CarouselTitle>Na sua Área </CarouselTitle>
-        <Slider {...sliderSettings} >
-          <Slide photo={fakeImg} />
-          <Slide photo={fakeImg} />
-          <Slide photo={fakeImg} />
-          <Slide photo={fakeImg} />
-          <Slide photo={fakeImg} />
-          <Slide photo={fakeImg} />
-          <Slide photo={fakeImg} />
-          <Slide photo={fakeImg} />
-          <Slide photo={fakeImg} />
-        </Slider>
+        <Carousel {...sliderSettings} >
+          { slides.map((restaurant, i) => (
+            <Slide key={`slide${i}`} photo={restaurant.imgUrl}>
+              <span>{restaurant.name}</span>
+            </Slide>
+          ))}
+        </Carousel>
       </Container>
       <Map>
       </Map>

@@ -30,6 +30,9 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 6. Carousel Part 3
   - Slide component created with styled div and background-image
 
+7. Carousel Finishing
+  - Slide customizing
+
 ## Available Scripts
 
 In the project directory, you can run:
