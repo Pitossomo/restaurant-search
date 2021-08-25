@@ -18,7 +18,6 @@ export const Search = styled.section`
   justify-content: center;
   background-color: #ffffff;
   padding: 10px;
-  align-items: stretch;
 `;
 
 export const SearchLogo = styled.img`

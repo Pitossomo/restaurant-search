@@ -12,7 +12,7 @@ export const StyledSlider = styled(Slider)`
 
 export const Slide = styled.div`
   height: 90px;
-  width: 72px;
+  width: 80px;
   border-radius: 6px;
   background-image: url(${(props) => props.photo});
   background-size: cover;
