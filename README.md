@@ -33,8 +33,12 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 7. Carousel Finishing
   - Slide customizing
 
-8. Developing Components Part 1
+8. Developing Components Parts 1,2 and 3
   - Developing restaurant cards
+
+9. Developing Components Parts 4 and 5
+  - Developing Modal with portals in react
+  - Developing an Overlay with a Dialog box
 
 ## Available Scripts
 

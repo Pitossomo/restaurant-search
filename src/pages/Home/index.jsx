@@ -5,10 +5,11 @@ import MaterialIcon from '@material/react-material-icon';
 import logo from '../../assets/logo.svg'
 
 import { Wrapper, Container, Search, SearchLogo, Map, CarouselTitle } from './styles'
-import { RestaurantCard, Carousel } from '../../components';
+import { RestaurantCard, Carousel, Modal } from '../../components';
 
 const Home = () => {
   const [inputValue, setInputValue] = useState('');
+  const [modalOpened, setModalOpened] = useState(false);
 
   return (
     <Wrapper>
@@ -28,11 +29,12 @@ const Home = () => {
           </TextField>
           <CarouselTitle>Na sua Área </CarouselTitle>
           <Carousel />
+          <button onClick={() => setModalOpened(true)}>Abrir Modal</button>
         </Search>
         <RestaurantCard />
       </Container>
-      <Map>
-      </Map>
+      <Map />
+      <Modal open={modalOpened} onClose={() => setModalOpened(!modalOpened)}/>
     </Wrapper>
   );
 };
