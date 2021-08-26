@@ -4,8 +4,8 @@ import MaterialIcon from '@material/react-material-icon';
 
 import logo from '../../assets/logo.svg'
 
-import { Wrapper, Container, Search, SearchLogo, Map, CarouselTitle } from './styles'
-import { RestaurantCard, Carousel, Modal } from '../../components';
+import { Wrapper, Container, Search, SearchLogo, CarouselTitle } from './styles'
+import { RestaurantCard, Carousel, Modal, Map } from '../../components';
 
 const Home = () => {
   const [inputValue, setInputValue] = useState('');
@@ -29,7 +29,6 @@ const Home = () => {
           </TextField>
           <CarouselTitle>Na sua Área </CarouselTitle>
           <Carousel />
-          <button onClick={() => setModalOpened(true)}>Abrir Modal</button>
         </Search>
         <RestaurantCard />
       </Container>

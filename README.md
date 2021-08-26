@@ -40,6 +40,9 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
   - Developing Modal with portals in react
   - Developing an Overlay with a Dialog box
 
+10. Integrating with Google Maps
+  - Maps component created
+
 ## Available Scripts
 
 In the project directory, you can run:

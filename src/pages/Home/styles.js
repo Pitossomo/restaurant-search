@@ -33,8 +33,3 @@ export const CarouselTitle = styled.h1`
   line-height: 29px;
   margin: 16px 0;
 `;
-
-export const Map = styled.div`
-  background-color: red;
-  width: 500px;
-`;
