@@ -41,7 +41,8 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
   - Developing an Overlay with a Dialog box
 
 10. Integrating with Google Maps
-  - Maps component created
+  - Maps component created using Google-Maps-React
+  - Functions for dealing with restaurant search near the map center
 
 ## Available Scripts
 
