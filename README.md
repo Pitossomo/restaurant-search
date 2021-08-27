@@ -43,6 +43,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 10. Integrating with Google Maps
   - Maps component created using Google-Maps-React
   - Functions for dealing with restaurant search near the map center
+  - Function searchByQuery for dealing with search by text input by the user
 
 ## Available Scripts
 
