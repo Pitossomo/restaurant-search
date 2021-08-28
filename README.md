@@ -45,6 +45,13 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
   - Functions for dealing with restaurant search near the map center
   - Function searchByQuery for dealing with search by text input by the user
 
+11. Redux Introductions
+  - Redux and React-redux libraries installed
+  - Creation of files and folders for redux, store, reducers and modules
+  - Encapsulation of App.js template with a Provider for redux, with store as a prop
+  - Actions creation on modules/restaurants
+  - Setting restaurants as a global status
+
 ## Available Scripts
 
 In the project directory, you can run:
