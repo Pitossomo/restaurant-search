@@ -52,6 +52,11 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
   - Actions creation on modules/restaurants
   - Setting restaurants as a global status
 
+12. Markers in Map and Restaurant Images
+  - Include markers for every restaurant found
+  - Integrate Map with Search via global states of redux
+  - Restaurants in Carousel and in Cards on the aside section
+
 ## Available Scripts
 
 In the project directory, you can run:

@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { useSelector } from 'react-redux';
 import TextField, { Input } from '@material/react-text-field';
 import MaterialIcon from '@material/react-material-icon';
 
@@ -11,6 +12,8 @@ const Home = () => {
   const [inputValue, setInputValue] = useState('');
   const [query, setQuery] = useState('');
   const [modalOpened, setModalOpened] = useState(false);
+  const { restaurants } = useSelector((state) => state.restaurants);
+ 
 
   function handleKeyPress(e) {
     if (e.key === "Enter");
@@ -35,9 +38,9 @@ const Home = () => {
             />
           </TextField>
           <CarouselTitle>Na sua Área </CarouselTitle>
-          <Carousel />
+          <Carousel restaurants={restaurants} />
         </Search>
-        <RestaurantCard />
+        { restaurants.map((restaurant) => <RestaurantCard key={restaurant.location_id} restaurant={restaurant} />)}
       </Container>
       <Map query={query} />
       <Modal open={modalOpened} onClose={() => setModalOpened(!modalOpened)}/>
