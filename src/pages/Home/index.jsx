@@ -42,8 +42,14 @@ const Home = () => {
               onChange={(e) => setInputValue(e.target.value)}
             />
           </TextField>
-          <CarouselTitle>Na sua Área </CarouselTitle>
-          <Carousel restaurants={restaurants} />
+          { restaurants.length > 0 ? (
+            <>
+              <CarouselTitle>Na sua Área </CarouselTitle>
+              <Carousel restaurants={restaurants} />
+            </>
+          ) : (
+            <Loader />
+          )}
         </Search>
         { restaurants.map((restaurant) => (
           <RestaurantCard 

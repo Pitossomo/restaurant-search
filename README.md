@@ -64,6 +64,10 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
   - Correct bugs in redux selectedRestaurant state
   - Styled-components for modal elements
 
+14. Animation and Skeleton Component
+  - Instalation of React-lottie
+  - Loader component created
+
 ## Available Scripts
 
 In the project directory, you can run:
