@@ -64,9 +64,11 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
   - Correct bugs in redux selectedRestaurant state
   - Styled-components for modal elements
 
-14. Animation and Skeleton Component
+14. Transitions 
   - Instalation of React-lottie
   - Loader component created
+  - Empty cache-like redux states before dispatching a new async request
+  - Skeleton component created to ease transitions
 
 ## Available Scripts
 
