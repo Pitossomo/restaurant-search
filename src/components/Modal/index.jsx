@@ -28,7 +28,9 @@ const Modal = ({ children, open, onClose }) => {
   return (
     <Portal>
       <Overlay onClick={onOverlayClick}>
-        <Dialog onClick={onDialogClick}>{children}</Dialog>
+        <Dialog onClick={onDialogClick}>
+          {children}
+        </Dialog>
       </Overlay>
     </Portal>
   )

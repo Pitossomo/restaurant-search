@@ -56,6 +56,13 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
   - Include markers for every restaurant found
   - Integrate Map with Search via global states of redux
   - Restaurants in Carousel and in Cards on the aside section
+  
+13. Restaurant details on click
+  - Improvements in carousel
+  - Open modal when click over restaurant card in sidebar
+  - Populate modal with the selected restaurant details
+  - Correct bugs in redux selectedRestaurant state
+  - Styled-components for modal elements
 
 ## Available Scripts
 

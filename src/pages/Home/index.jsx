@@ -5,19 +5,24 @@ import MaterialIcon from '@material/react-material-icon';
 
 import logo from '../../assets/logo.svg'
 
-import { Wrapper, Container, Search, SearchLogo, CarouselTitle } from './styles'
+import { Wrapper, Container, Search, SearchLogo, CarouselTitle, ModalTitle, ModalContent } from './styles'
 import { RestaurantCard, Carousel, Modal, Map } from '../../components';
 
 const Home = () => {
   const [inputValue, setInputValue] = useState('');
-  const [query, setQuery] = useState('');
+  const [query, setQuery] = useState(null);
+  const [placeId, setPlaceId] = useState(null);
   const [modalOpened, setModalOpened] = useState(false);
-  const { restaurants } = useSelector((state) => state.restaurants);
+  const { restaurants, restaurantSelected } = useSelector((state) => state.restaurants);
  
-
   function handleKeyPress(e) {
     if (e.key === "Enter");
       setQuery(inputValue);
+  }
+
+  function handleOpenModal(placeId) {
+    setPlaceId(placeId);
+    setModalOpened(true);
   }
 
   return (
@@ -40,12 +45,30 @@ const Home = () => {
           <CarouselTitle>Na sua Área </CarouselTitle>
           <Carousel restaurants={restaurants} />
         </Search>
-        { restaurants.map((restaurant) => <RestaurantCard key={restaurant.location_id} restaurant={restaurant} />)}
+        { restaurants.map((restaurant) => (
+          <RestaurantCard 
+            key={restaurant.place_id}
+            restaurant={restaurant}
+            onClick={() => handleOpenModal(restaurant.place_id)}
+          />
+        ))};
       </Container>
-      <Map query={query} />
-      <Modal open={modalOpened} onClose={() => setModalOpened(!modalOpened)}/>
+      <Map query={query} placeId={placeId} />
+      <Modal 
+        open={modalOpened}
+        onClose={() => setModalOpened(!modalOpened)}
+      >
+        <ModalTitle>{restaurantSelected?.name}</ModalTitle>
+        <ModalContent>{restaurantSelected?.formatted_phone_number}</ModalContent>
+        <ModalContent>{restaurantSelected?.formatted_address}</ModalContent>
+        <ModalContent>
+          {restaurantSelected?.opening_hours?.open_now 
+            ? 'Aberto agora :-)' : 'Fechado no momento :-('
+          }
+        </ModalContent>
+      </Modal>      
     </Wrapper>
   );
 };
 
-export default Home;
+ export default Home;
