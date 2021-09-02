@@ -14,16 +14,15 @@ const Carousel = ({restaurants}) => {
     slidesToScroll: 3,
     adaptiveHeight: true
   };
-   
-  return (
+
+   return (
     <StyledSlider {...sliderSettings} >
       { restaurants.map((restaurant) => (
         <Slide 
           key={restaurant.place_id}
           photo={restaurant.photos ? restaurant.photos[0].getUrl() : fakeImg}
-        >
-          <p>{restaurant.name}</p>
-        </Slide>
+          title={restaurant.name}
+        />
       ))}
     </StyledSlider>
   );  

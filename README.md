@@ -69,6 +69,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
   - Loader component created
   - Empty cache-like redux states before dispatching a new async request
   - Skeleton component created to ease transitions
+  - Skeleton added to images and to restaurant details on popup
 
 ## Available Scripts
 
